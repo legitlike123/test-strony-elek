@@ -203,6 +203,18 @@ h2 {
   transform: scale(1.13) rotate(-7deg);
 }
 
+.gallery-note {
+  text-align: center;
+  margin-top: 18px;
+  color: #888;
+}
+
+.footer-link {
+  color: #FFB800;
+  text-decoration: underline;
+}
+
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

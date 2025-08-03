@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Elektryk Koszalin i okolice, Sarbinowo, Gąski, Kołobrzeg, Łekno | Marcin Kuzioła Instalatorstwo Elektryczne</title>
+  <title>Elektryk Koszalin i okolice, Sarbinowo, Gąski, Kołobrzeg, Łekno | Marcin Kuzioła Instalatorstwo Elektryczne
+  </title>
   <meta name="description"
     content="Profesjonalne usługi elektryczne w Koszalinie i okolicach – instalacje, przyłącza, pomiary, naprawy awarii i montaż klimatyzacji. Szybko, bezpiecznie i zgodnie z normami.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,28 +17,18 @@
 
 <body>
   <header>
-    <h1>Instalatorstwo Elektryczne</h1>
-    <!--
-    <h2 style="color: #fff;">Marcin Kuzioła</h2>
-    <p style="color: #FFB800;">
-  Instalacje, pomiary, przyłącza, montaż klimatyzacji split &mdash; Koszalin, Sarbinowo, Gąski, Kołobrzeg, Łekno
-</p>
--->
+    <h1>Elektryk Koszalin i okolice</h1>
     <h2>Marcin Kuzioła</h2>
     <p>
-      <!-- Instalacje, pomiary, przyłącza, montaż klimatyzacji split &mdash; Koszalin, Sarbinowo, Gąski, Kołobrzeg, Łekno
-    -->
       Profesjonalne instalacje i naprawy elektryczne &mdash; Koszalin i okolice
     </p>
-
-
   </header>
+
   <nav>
     <a href="#uslugi">Usługi</a>
     <a href="#galeria">Galeria</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
-
 
   <section id="uslugi" class="container">
     <h2>Usługi elektryczne</h2>
@@ -82,7 +73,6 @@
     </div>
   </section>
 
-
   <section id="galeria" class="container">
     <h2>Galeria realizacji</h2>
     <div class="gallery-grid">
@@ -92,7 +82,7 @@
       <img src="./images/gallery/klimatyzacja1.jpg" alt="Montaż klimatyzacji split Kołobrzeg">
       <img src="./images/gallery/instalacja4.jpg" alt="Instalacja elektryczna Łekno">
     </div>
-    <p style="text-align:center; margin-top:18px; color:#888;">Kliknij zdjęcie, aby powiększyć.</p>
+    <p class="gallery-note">Kliknij zdjęcie, aby powiększyć.</p>
   </section>
 
   <section id="kontakt" class="container">
@@ -114,10 +104,9 @@
     <p class="kontakt-desc">Chętnie odpowiem na każde zapytanie – zadzwoń lub napisz e-mail!</p>
   </section>
 
-  </div>
   <footer>
     &copy; 2025 Marcin Kuzioła Instalatorstwo Elektryczne. Wszelkie prawa zastrzeżone. |
-    <a href="./polityka-prywatnosci.html" style="color:#FFB800; text-decoration:underline;">Polityka Prywatności</a>
+    <a href="./polityka-prywatnosci.html" class="footer-link">Polityka Prywatności</a>
   </footer>
 
   <!-- Lightbox JS -->
@@ -125,39 +114,8 @@
     <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
     <img src="" alt="" id="lightbox-img">
   </div>
-  <script>
-    // Gallery Lightbox
-    const galleryImgs = document.querySelectorAll('.gallery-grid img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    galleryImgs.forEach(img => {
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
-      });
-    });
-    function closeLightbox() {
-      lightbox.classList.remove('active');
-      lightboxImg.src = '';
-    }
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) closeLightbox();
-    });
 
-    // Smooth scroll nav highlight
-    const navLinks = document.querySelectorAll('nav a');
-    window.addEventListener('scroll', () => {
-      let fromTop = window.scrollY + 90;
-      navLinks.forEach(link => {
-        let section = document.querySelector(link.getAttribute('href'));
-        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-          navLinks.forEach(l => l.classList.remove('active'));
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
+  <script src="js/main.js" defer></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script type="application/ld+json">
   {
@@ -175,7 +133,7 @@
     "telephone": "+48510247585",
     "email": "elektrykkoszalin24@gmail.com",
     "areaServed": ["Koszalin", "Sarbinowo", "Gąski", "Kołobrzeg", "Łekno", "Będzino", "Konikowo", "Zachodniopomorskie"],
-    "url": "https://twojadomena.pl"
+    "url": "https://twojadomena.pl" 
   }
   </script>
 </body>
