@@ -438,3 +438,32 @@ footer {
     padding: 7px 7px 7px 8px;
   }
 }
+
+/* Przyciski “Powrót do wszystkich usług” */
+.back-button-container {
+  margin: 20px 0;
+  text-align: left;
+  padding-left: 110px; /* dostosuj odsunięcie */
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  background: #FFB800;
+  color: #1E3A8A;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #FFD700;
+}
+
+.back-button__icon {
+  margin-right: 8px;
+  font-size: 1em;
+}
