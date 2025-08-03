@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Elektryk Koszalin, Sarbinowo, Gąski, Kołobrzeg, Łekno | Marcin Kuzioła Instalatorstwo Elektryczne</title>
+  <meta name="description"
+    content="Instalacje elektryczne, pomiary, przyłącza, montaż klimatyzacji split. Elektryk Koszalin, Sarbinowo, Gąski, Kołobrzeg, Łekno – Marcin Kuzioła.">
+  <meta name="keywords"
+    content="elektryk Koszalin, elektryk Sarbinowo, elektryk Gąski, elektryk Kołobrzeg, elektryk Łekno, instalacje elektryczne, pomiary elektryczne, przyłącza, montaż klimatyzacji split">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Instalatorstwo Elektryczne</h1>
+    <!--
+    <h2 style="color: #fff;">Marcin Kuzioła</h2>
+    <p style="color: #FFB800;">
+  Instalacje, pomiary, przyłącza, montaż klimatyzacji split &mdash; Koszalin, Sarbinowo, Gąski, Kołobrzeg, Łekno
+</p>
+-->
+    <h2>Marcin Kuzioła</h2>
+    <p>
+      Instalacje, pomiary, przyłącza, montaż klimatyzacji split &mdash; Koszalin, Sarbinowo, Gąski, Kołobrzeg, Łekno
+    </p>
+
+
+  </header>
+  <nav>
+    <a href="#uslugi">Usługi</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  
+<section id="uslugi" class="container">
+  <h2>Usługi elektryczne</h2>
+  <div class="services">
+    <div class="service">
+      <i class="fas fa-cogs"></i>
+      <h3>Instalacje elektryczne</h3>
+      <p>Zakładam i modernizuję instalacje w domach i firmach – szybko, bezpiecznie i zgodnie z normami.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-wrench"></i>
+      <h3>Usuwanie usterek</h3>
+      <p>Szybka pomoc w razie awarii – naprawiam gniazdka, oświetlenie i inne problemy z prądem.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-tachometer-alt"></i>
+      <h3>Pomiary elektryczne</h3>
+      <p>Pomiary i protokoły wymagane do odbioru budynków i dla spokoju Twojego bezpieczeństwa.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-tools"></i>
+      <h3>Przyłącza elektryczne</h3>
+      <p>Podłączam Twój dom lub firmę do sieci – od formalności po podłączenie licznika.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-snowflake"></i>
+      <h3>Montaż klimatyzacji</h3>
+      <p>Szybki montaż klimatyzacji z doradztwem oraz estetycznym wykonaniem.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="galeria" class="container">
+    <h2>Galeria realizacji</h2>
+    <div class="gallery-grid">
+      <img src="./images/gallery/instalacja1.jpg" alt="Instalacja elektryczna Koszalin">
+      <img src="./images/gallery/instalacja2.jpg" alt="Instalacja elektryczna Sarbinowo">
+      <img src="./images/gallery/instalacja3.jpg" alt="Instalacja elektryczna Gąski">
+      <img src="./images/gallery/klimatyzacja1.jpg" alt="Montaż klimatyzacji split Kołobrzeg">
+      <img src="./images/gallery/instalacja4.jpg" alt="Instalacja elektryczna Łekno">
+    </div>
+    <p style="text-align:center; margin-top:18px; color:#888;">Kliknij zdjęcie, aby powiększyć.</p>
+  </section>
+
+  <section id="kontakt" class="container">
+    <h2>Kontakt</h2>
+    <div class="kontakt-box">
+      <div class="kontakt-item">
+        <span class="kontakt-ikona"><i class="fas fa-phone"></i></span>
+        <a href="tel:+48500111222" class="kontakt-link">+48 500 111 222</a>
+      </div>
+      <div class="kontakt-item">
+        <span class="kontakt-ikona"><i class="fas fa-envelope"></i></span>
+        <a href="mailto:elektrykkoszalin24@gmail.com" class="kontakt-link">elektrykkoszalin24@gmail.com</a>
+      </div>
+      <div class="kontakt-item">
+        <span class="kontakt-ikona"><i class="fas fa-map-marker-alt"></i></span>
+        <span class="kontakt-link">Łekno 22, Będzino</span>
+      </div>
+    </div>
+    <p class="kontakt-desc">Chętnie odpowiem na każde zapytanie – zadzwoń lub napisz e-mail!</p>
+  </section>
+
+  </div>
+  <footer>
+    &copy; 2025 Marcin Kuzioła Instalatorstwo Elektryczne. Wszelkie prawa zastrzeżone. |
+    <a href="polityka-prywatnosci.html" style="color:#FFB800; text-decoration:underline;">Polityka Prywatności</a>
+  </footer>
+
+  <!-- Lightbox JS -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+  <script>
+    // Gallery Lightbox
+    const galleryImgs = document.querySelectorAll('.gallery-grid img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    galleryImgs.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+      });
+    });
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+    }
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Smooth scroll nav highlight
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 90;
+      navLinks.forEach(link => {
+        let section = document.querySelector(link.getAttribute('href'));
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Marcin Kuzioła Instalatorstwo Elektryczne",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Łekno 22",
+      "addressLocality": "Będzino",
+      "addressRegion": "Zachodniopomorskie",
+      "postalCode": "76-037",
+      "addressCountry": "PL"
+    },
+    "telephone": "+48500111222",
+    "email": "elektrykkoszalin24@gmail.com",
+    "areaServed": ["Koszalin", "Sarbinowo", "Gąski", "Kołobrzeg", "Łekno"],
+    "url": "https://twojadomena.pl"
+  }
+  </script>
+</body>
+
+</html>
