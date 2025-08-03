@@ -1,3 +1,11 @@
+
+*.swp
+*.swo
+*.swx
+*~
+*.bak
+*.un~
+*.vim~
 ./php/
 ./assets/
 ./logi/
