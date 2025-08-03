@@ -169,7 +169,8 @@ h2 {
   transform: translateY(-2px) scale(1.04);
 }
 
-.service i, .service .emoji {
+.service i,
+.service .emoji {
   font-size: 2.2em;
   margin-bottom: 14px;
   color: var(--accent);
@@ -443,7 +444,8 @@ footer {
 .back-button-container {
   margin: 20px 0;
   text-align: left;
-  padding-left: 110px; /* dostosuj odsunięcie */
+  padding-left: 110px;
+  /* dostosuj odsunięcie */
 }
 
 .back-button {
@@ -462,17 +464,26 @@ footer {
 /* Dla ekranów do 600px szerokości – mobile */
 @media (max-width: 600px) {
   .back-button-container {
-    text-align: center;    /* centrowanie kontenera */
-    padding-left: 0;       /* usuń offset */
-    padding: 10px 0;       /* oddech wokół przycisku */
+    text-align: center;
+    /* centrowanie kontenera */
+    padding-left: 0;
+    /* usuń offset */
+    padding: 10px 0;
+    /* oddech wokół przycisku */
   }
+
   .back-button {
-    display: block;        /* blokowy, pełna szerokość */
-    width: 90%;            /* 90% szerokości ekranu */
-    margin: 0 auto;        /* centrowanie */
+    display: block;
+    /* blokowy, pełna szerokość */
+    width: 90%;
+    /* 90% szerokości ekranu */
+    margin: 0 auto;
+    /* centrowanie */
     box-sizing: border-box;
-    font-size: 1em;        /* większy tekst */
-    padding: 12px 0;       /* wyższy padding pionowy */
+    font-size: 1em;
+    /* większy tekst */
+    padding: 12px 0;
+    /* wyższy padding pionowy */
   }
 }
 
